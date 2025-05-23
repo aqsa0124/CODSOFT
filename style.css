@@ -1,116 +1,69 @@
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: 'Segoe UI',sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #fffaf6;
     color: #333;
 }
 
 header {
-    background-color: #354259;
+    background-color: #ffdfdf;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #cc3366;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #ffe6f0;
+}
+
+.hero h2{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #cc3366;
     color: white;
-    text-align: center;
-    padding: 2rem 0;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-.about {
-    text-align: center;
-    padding: 2rem;
-    background-color: #fff;
-}
-
-.about img {
-    width: 150px;
-    height: 135px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-}
-
-.skills {
-    background-color:#fdfdfd;
-    padding: 2rem;
+.about, .product, .contact{
+    padding: 50px 20px;
     text-align: center;
 }
 
-.skills ul {
-    list-style-type: none;
+.products {
+    list-style: none;
+    text-align: center;
     padding: 0;
 }
 
-.skills li {
-    background-color: #e0e0e0;
-    margin: 0.5rem auto;
-    padding: 0.5rem 1rem;
-    width: fit-content;
-    border-radius: 20px;
-    display: inline-block;
-}
-
-.projects {
-    background-color: #fff;
-    padding: 2rem;
-    text-align: center;
-}
-
-.project {
-    margin: 1.5rem 0;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-}
-
-.project h3 {
-    margin-bottom: 0.5rem;
-}
-
-.project a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#resume {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-}
-
-#resume a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0077cc;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-#resume a:hover {
-    background-color: #005fa3;
-}
-
-#contact {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #fff;
-    color: #333;
-}
- #contact a {
-    color: #0077cc;
-    text-decoration: none;
- }
-
- #contact a:hover {
-    text-decoration: underline;
- }
-
- footer {
+footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
- }
+    background: #ffdfdf;
+    margin-top: 30px;
+}
