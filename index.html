@@ -3,66 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aqsa's Portfolio</title>
+    <title>Simple Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Aqsa</h1>
-        <p>Aspiring Web Developer | Dreamer | Doer</p>
-    </header>
-
-    <section class="about">
-        <h2>About me</h2>
-        <img src="image.png" alt="Aqsa's image">
-        <p>
-            Hello I'm Aqsa,a passoniate and hardworking B.Tech student who loves learning to code.
-            I'm on a journey to become a successful web developer and build a life full of purpose, creativity and independence.
-        </p>
-    </section>
-
-    <section class="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML and CSS</li>
-            <li>C Programming</li>
-            <li>Basic JavaScript</li>
-            <li>Problem Solving</li>
-            <li>Quick Learner</li>
-        </ul>
-    </section>
-
-    <section class="projects">
-        <h2>My Projects</h2>
-        
-        <div class="project">
-            <h3>A natural skincare website</h3>
-            <p>A fictional landing page for a natural skincare brand, built using HTML and CSS. Designed with a cleam, calm aesthetic and a personal touch</p>
-            <a href="https://github.com/aqsa0124/CODSOFT">View Project</a>
+    <div>
+        <h1>Calculator</h1>
+        <input type="text" id="display" disabled />
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendValue('/')">/</button>
+            <button onclick="appendValue('*')">*</button>
+            <button onclick="appendValue('-')">-</button>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('+')">+</button>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('0')">0</button>
         </div>
+    </div>
 
-        <div class="project">
-            <h3>My Portfolio</h3>
-            <p>This very Portfolio! Built using HTML and CSS to present my skills, resume and contact info.</p>
-            <a href="#">View Project</a>
-        </div>
-    </section>
-
-    <section id="resume">
-        <h2>My Resume</h2>
-        <p>Click the button below to download my resume.</p>
-    <a href="https://github.com/aqsa0124/CODSOFT/blob/main/aqsaparvezresume_.pdf" target="_blank">Download Resume</a>
-    </section>
-
-    <section id="contact">
-        <h2>Contact me</h2>
-        <p>Email: aqsap912@gmail.com</p>
-        <p>Phone: 9919069308</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/Aqsa Parvez"target="_blank">linkedin.com/in/aqsa parvez</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Aqsa. All rights reserved.</p>
-    </footer>
+    <script scr="script.js"></script>
 </body>
 </html>
